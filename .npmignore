@@ -1,4 +1,5 @@
 .babelrc
+.editorconfig
 .gitattributes
 forDevelopment.js
 **/*.test.js
