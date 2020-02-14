@@ -1,0 +1,26 @@
+{
+  "name": "@advisorycloud/aws-ses",
+  "version": "1.0.0",
+  "description": "A wrapper around the AWS SES SDK to make it easier to construct the required payloads.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:advisorycloud/aws-ses.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/advisorycloud/aws-ses/issues"
+  },
+  "homepage": "https://github.com/advisorycloud/aws-ses",
+  "peerDependencies": {
+    "aws-sdk": "2.x"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "aws-sdk": "^2.616.0",
+    "jest": "^25.1.0"
+  }
+}
