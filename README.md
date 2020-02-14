@@ -25,7 +25,7 @@ module.exports = {
 
 # Available Wrappers
 
-* [sendEmail](#methods/sendEmail/README.md)
+* [sendEmail](methods/sendEmail/README.md)
 
 
 # Architecture
