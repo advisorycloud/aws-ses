@@ -10,6 +10,14 @@
     "type": "git",
     "url": "git+ssh://git@github.com:advisorycloud/aws-ses.git"
   },
+  "keywords": [
+    "AWS",
+    "SES"
+  ],
+  "contributors": [
+    "Jeremy Brown <jeremy@notmessenger.com> (http://www.notmessenger.com)",
+    "Jordan Bergero (https://github.com/zenmasterjobo)"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/advisorycloud/aws-ses/issues"
