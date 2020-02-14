@@ -1,3 +1,4 @@
 .babelrc
+.gitattributes
 forDevelopment.js
 **/*.test.js
