@@ -4,6 +4,10 @@ Node.js library used to interact with [AWS SES](https://aws.amazon.com/ses/).
 
 It provides a wrapper around the [SDK](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/SES.html) to make it easier to construct the required payloads.
 
+[![Latest Release](https://img.shields.io/github/release/advisorycloud/aws-ses.svg)](https://github.com/advisorycloud/aws-ses/releases) [![License](https://img.shields.io/github/license/advisorycloud/aws-ses)](LICENSE.md) [![Downloads](https://img.shields.io/npm/dm/@advisorycloud/aws-ses)](https://www.npmjs.com/package/@advisorycloud/aws-ses)
+
+[![Dependencies](https://img.shields.io/david/advisorycloud/aws-ses)](https://david-dm.org/advisorycloud/aws-ses) [![Peer Dependencies](https://img.shields.io/david/peer/advisorycloud/aws-ses)](https://david-dm.org/advisorycloud/aws-ses?type=peer) [![Dev Dependencies](https://img.shields.io/david/dev/advisorycloud/aws-ses)](https://david-dm.org/advisorycloud/aws-ses?type=dev)
+
 # Usage
 
 ```javascript
