@@ -26,6 +26,6 @@ This document captures the steps a project maintainer should follow when releasi
     * `npm version x.x.x`, where *x.x.x* is the Semantic Version of the changeset
     * `git push origin master`
     * `git push origin --tags`
-    * `npm publish --registry http://registry.npmjs.org/ --access public`
+    * `npm publish --registry http://registry.npmjs.org/`
         * Note: `--registry` flag is workaround for occasional issues with default SSL url
 * Copy the content of the additions made to the *CHANGELOG.md* file to the Release Notes of the just-released tag
