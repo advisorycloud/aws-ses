@@ -7,7 +7,7 @@ It provides a wrapper around the [SDK](https://docs.aws.amazon.com/AWSJavaScript
 # Usage
 
 ```javascript
-const library = require('./index').SES
+const library = require('@advisorycloud/aws-ses').SES
 const SES = new library()
 
 const handler = async () => {
