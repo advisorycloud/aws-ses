@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.0.2
+
+**DOCUMENTATION**
+
+* Update README.md code example
+
+[View complete changeset](https://github.com/advisorycloud/aws-ses/compare/v1.0.1...v1.0.2)
+
 ## 1.0.1
 
 **BUG FIX**

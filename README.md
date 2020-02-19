@@ -17,6 +17,7 @@ const SES = new library()
 const handler = async () => {
   await SES.sendEmail({
     to: 'test@example.com',
+    from: 'test@example.com',
     subject: 'test subject',
     bodyText: 'body text'
   })
