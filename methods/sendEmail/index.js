@@ -19,13 +19,6 @@ const ERROR_MESSAGES = Object.freeze({
 })
 
 /**
- * Default address sending the email
- *
- * @type {string}
- */
-const SOURCE_ADDRESS = `no-reply@advisorycloud.info`
-
-/**
  * Wrapper around AWS.SES.sendEmail()
  *
  * @type {class}
@@ -110,8 +103,6 @@ class SendEmail {
    * - returnPathArn
    * - sourceArn
    * - tags
-   *
-   * `from` defaults to `no-reply@advisorycloud.info` if no value provided
    */
   constructPayload() {
     const payload = {
@@ -184,7 +175,7 @@ class SendEmail {
     }
 
     // Source
-    payload.Source = this.params.from || SOURCE_ADDRESS
+    payload.Source = this.params.from
 
     // ConfigurationSetName
     if (this.params.configurationSetName) {
@@ -247,6 +238,5 @@ class SendEmail {
 
 module.exports = {
   ERROR_MESSAGES,
-  SOURCE_ADDRESS,
   SendEmail
 }

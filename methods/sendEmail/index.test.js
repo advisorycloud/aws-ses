@@ -2,7 +2,6 @@ const moduleUnderTest = require(`./index`)
 
 const {
   ERROR_MESSAGES,
-  SOURCE_ADDRESS,
   SendEmail
 } = moduleUnderTest
 
@@ -211,6 +210,7 @@ describe(`Methods`, () => {
         bcc: 'testBcc',
         cc: 'testCc',
         to: 'testTo',
+        from: 'testFrom',
         bodyHtml: 'testBodyHtml',
         bodyText: 'testBodyText',
         subject: 'testSubject'
@@ -237,7 +237,7 @@ describe(`Methods`, () => {
             Data: 'testSubject'
           }
         },
-        Source: SOURCE_ADDRESS
+        Source: 'testFrom'
       }
     )
 
@@ -308,36 +308,6 @@ describe(`Methods`, () => {
             }
           }
         }
-      }
-    )
-
-    // Source
-    underTest = new SendEmail(
-      {},
-      {
-        to: 'testTo',
-        bodyText: 'testBodyText',
-        subject: 'testSubject',
-        from: 'different value'
-      }
-    )
-
-    expect(underTest.payload).toMatchObject(
-      {
-        Destination: {
-          ToAddresses: ['testTo']
-        },
-        Message: {
-          Body: {
-            Text: {
-              Data: 'testBodyText'
-            }
-          },
-          Subject: {
-            Data: 'testSubject'
-          }
-        },
-        Source: 'different value'
       }
     )
 
